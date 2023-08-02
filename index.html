@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-section">
+        <div class="card card-front">
+          <div class="card-front-form">
+            <div class="row">
+              <p class>0000 0000 0000 0000</p>
+            </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+            <div class="row">
+              <p>Jane Appleseed</p>
 
-  000
+              <p>09/00</p>
+            </div>
+          </div>
+        </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+        <div class="card card-back">
+          <div class="card-back-code">
+            <p class="preview-cvc">000</p>
+          </div>
+        </div>
+      </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+      <div class="right-section">
+        <div class="form-body">
+          <div class="row">
+            <div class="input-group">
+              <label>Cardholder Name</label>
+              <input
+                class="form-input"
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+              />
+            </div>
+          </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+          <div class="row">
+            <div class="input-group">
+              <label>Card Number</label>
+              <input
+                class="form-input"
+                type="text"
+                placeholder="1234 5678 9123 0000"
+              />
+            </div>
+          </div>
 
-  CVC
-  e.g. 123
+          <div class="row">
+            <div class="input-group">
+              <label>Exp. date (MM/YY)</label>
+              <div class="input-month-year">
+                <input class="form-input" type="text" placeholder="MM" />
+                <input class="form-input" type="text" placeholder="YY" />
+              </div>
+            </div>
 
-  Confirm
+            <div class="input-group">
+              <label>CVC</label>
+              <input class="form-input" type="text" placeholder="e.g. 123" />
+            </div>
+          </div>
 
-  <!-- Completed state start -->
+          <div class="row">
+            <button class="btn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Completed state start -->
+    <!-- 
+    Thank you! We've added your card details Continue
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
